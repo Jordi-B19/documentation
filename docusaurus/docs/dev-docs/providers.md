@@ -355,14 +355,14 @@ If you want to create your own provider without publishing it on npm you can fol
 
 1. Create a `providers` folder in your application.
 2. Create your provider (e.g. `./providers/strapi-provider-<plugin>-<provider>`)
-3. Then update your `package.json` to link your `strapi-provider-<plugin>-<provider>` dependency to the [local path](https://docs.npmjs.com/files/package.json#local-paths) of your new provider.
+3. Then update your `package.json` to link your `@strapi/provider-<plugin>-<provider>` dependency to the [local path](https://docs.npmjs.com/files/package.json#local-paths) of your new provider.
 
 ```json
 {
   ...
   "dependencies": {
     ...
-    "strapi-provider-<plugin>-<provider>": "file:providers/strapi-provider-<plugin>-<provider>",
+    "@strapi/provider-<plugin>-<provider>": "file:providers/strapi-provider-<plugin>-<provider>",
     ...
   }
 }
